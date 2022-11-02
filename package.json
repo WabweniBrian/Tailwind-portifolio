@@ -1,0 +1,21 @@
+{
+  "name": "tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/input.css -o dist/output.css --watch"
+  },
+  "author": "Wabweni Brian",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "css": "^3.0.0",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  }
+}

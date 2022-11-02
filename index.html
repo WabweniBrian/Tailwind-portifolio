@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist//output.css">
+    <link rel="stylesheet" href="src/feather-icons/feather.css">
+    <link rel="shortcut icon" href="src/images/logo.png" type="image/x-icon">
+    <title>Tailwind CSS</title>
+</head>
+<body class="font-poppins text-textColor dark:text-textColorDark bg-mainBg dark:bg-mainBgDark">
+    <button
+        class="back-to-top-btn w-9 h-9 grid place-items-center border border-primary rounded-full shadow shadow-primary/60 fixed bottom-0 right-0 mb-4 mr-4 text-primary"><i
+            class="feather-chevron-up"></i></button>
+    <!-------------------------------------- Navbar--------------------------------------------------------------- -->
+    <nav class="px-[3%] py-[0.6rem] fixed w-full top-0 left-0 z-50 md:px-[9%] md:!py-[0.2rem]  dark:bg-mainBgDark">
+        <div class="navbar flex items-center justify-between">
+            <a href="#"
+                class="navbar-brand text-xl font-[800] hover:!text-primary transition-all duration-300">Brian<span
+                    class="!text-primary">.</span>
+            </a>
+            <div class="left-nav flex items-center space-x-4 md:order-2">
+                <div class="dropdown relative cursor-pointer group">
+                    En
+                    <i class="feather-chevron-down"> </i>
+                    <ul
+                        class="hidden border shadow-light rounded-lg bg-lightColor dark:bg-mainBgDark dark:border-gray-800 w-32 absolute z-30 overflow-hidden right-full -mr-10 group-hover:block">
+                        <li class="px-4 py-1 hover:bg-gray-200 dark:hover:bg-lightColorDark">Fr</li>
+                        <li class="px-4 py-1 hover:bg-gray-200 dark:hover:bg-lightColorDark">Gm</li>
+                        <li class="px-4 py-1 hover:bg-gray-200 dark:hover:bg-lightColorDark">Lg</li>
+                    </ul>
+                </div>
+                <div class="px-2 py-1 rounded-full flex-align-center cursor-pointer shadow-inner shadow-gray-500">
+                    <i class="feather-sun px-4 py-1 shadow-light rounded-full"></i>
+                    <i class="feather-moon px-4 py-1 shadow-light rounded-full active"></i>
+                </div>
+                <!-- Toggle Button -->
+                <button><i
+                        class="toggle feather-menu p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-lightColorDark md:hidden"></i></button>
+            </div>
+
+            <!-- Primary Menu -->
+            <ul class="hidden md:flex space-x-10">
+                <li class="nav-link"><a href="#home">Home.</a></li>
+                <li class="nav-link"><a href="#about">About.</a></li>
+                <li class="nav-link"><a href="#skills">Skills.</a></li>
+                <li class="nav-link"><a href="#portifolio">Portifolio.</a></li>
+                <li class="nav-link"><a href="#contact">Contact.</a></li>
+            </ul>
+
+            <!-- Mobile Menu -->
+            <ul class="mobile-menu md:hidden flex flex-col absolute w-full top-full left-0 bg-lightColor
+               dark:bg-lightColorDark
+                 max-h-0 overflow-hidden p-0 transition-all duration-300 shadow-light showMenu:border-top-light">
+                <li class="nav-link"><a href="#home">Home.</a></li>
+                <li class="nav-link"><a href="#about">About.</a></li>
+                <li class="nav-link"><a href="#skills">Skills.</a></li>
+                <li class="nav-link"><a href="#portifolio">Portifolio.</a></li>
+                <li class="nav-link"><a href="#contact">Contact.</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-------------------------------------- //Navbar--------------------------------------------------------------- -->
+
+    <!-------------------------------------- Hero Section--------------------------------------------------------------- -->
+    <section
+        class="home !px-[4%] min-h-screen flex justify-between items-center bg-imageSm bg-contain bg-no-repeat bg-center md:bg-imageMd lg:bg-imageLg"
+        id="home">
+        <div class="icons opacity-80 self-end mb-40">
+            <a href="#" class="block mt-2"><i class="feather-facebook "></i></a>
+            <a href="#" class="block mt-2"><i class="feather-twitter"></i></a>
+            <a href="#" class="block mt-2"><i class="feather-instagram"></i></a>
+            <a href="#" class="block mt-2"><i class="feather-linkedin"></i></a>
+        </div>
+        <div class="cta text-center">
+            <h1 class="capitalize text-4xl font-extrabold text-lightColor text-shadow">hi, am brian <br> a web
+                developer</h1>
+            <button class="btn text-white border border-primary rounded my-4">get in touch</button>
+        </div>
+        <div class="scroll-text rotate self-end mb-40">
+            <p class="heading">scroll</p>
+    </section>
+    <!-------------------------------------- //Hero Section--------------------------------------------------------------- -->
+
+    <section class="other pb-12">
+        <div class="cards flex-center-center flex-wrap gap-4">
+            <div class="card bg-white dark:bg-lightColorDark p-2 flex-center-center shadow-light gap-4 rounded-lg">
+                <img src="src/images/stats-card_icon-1.png" alt="" width="30">
+                <div class="text-center">
+                    <h1 class="font-extrabold text-2xl text-primary">12+</h1>
+                    <p class="text-[12px] opacity-80">Years of Experience</p>
+                </div>
+
+            </div>
+            <div class="card bg-white dark:bg-lightColorDark p-2 flex-center-center shadow-light gap-4 rounded-lg">
+                <img src="src/images/stats-card_icon-2.png" alt="" width="30">
+                <div class="text-center">
+                    <h1 class="font-extrabold text-2xl text-primary">230+</h1>
+                    <p class="text-[12px] opacity-80">Years of Experience</p>
+                </div>
+
+            </div>
+            <div class="card bg-white dark:bg-lightColorDark p-2 flex-center-center shadow-light gap-4 rounded-lg">
+                <img src="src/images/stats-card_icon-3.png" alt="" width="30">
+                <div class="text-center">
+                    <h1 class="font-extrabold text-2xl text-primary">95+</h1>
+                    <p class="text-[12px] opacity-80">Years of Experience</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-------------------------------------- About Section--------------------------------------------------------------- -->
+    <section class="about" id="about">
+        <div class="flex items-center flex-wrap text-center sm:text-left">
+            <div class="image flex-1 basis-[18rem]">
+                <img src="src/images/about-banner.png" alt="" class="w-full">
+            </div>
+            <div class="content flex-1 basis-[20rem] flex flex-col md:flex-row items-center md:items-start">
+                <div class="heading md:rotate-90 md:h-[fit-content] md:w-1/5 mt-12">
+                    <h1 class="uppercase opacity-70 text-center text-sm">about me</h1>
+                </div>
+                <div class="info md:w-4/5">
+                    <h1 class="text-2xl capitalize font-bold">need a creative product? <br> i can help
+                        you
+                    </h1>
+                    <p class="text-sm my-3 opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Fuga
+                        enim
+                        aliquam
+                        blanditiis id explicabo natus at dolorum unde nihil earum. Omnis iste consectetur, quibusdam
+                        quaerat,
+                        labore laboriosam, totam rem numquam voluptatem quam dolorum! Ducimus sit sapiente quo
+                        voluptatibus
+                        quaerat dolorem, sequi dolor, enim assumenda culpa, dolorum voluptatem temporibus eaque minima.
+                    </p>
+                    <p class="text-sm my-3 opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Quaerat
+                        distinctio corrupti
+                        repellat autem maiores dolores consequatur nesciunt quos adipisci magni error aliquam, quo
+                        mollitia
+                        minima est provident. Vel, cupiditate quisquam?</p>
+
+                    <div class="btns">
+                        <button class="btn bg-primary text-lightColor border border-primary">hire me</button>
+                        <button class="btn border border-primary text-primary ml-2 !px-4">download cv</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------- //About Section--------------------------------------------------------------- -->
+
+
+    <!-------------------------------------- Skills Section--------------------------------------------------------------- -->
+    <section class="skills pb-12 pt-12" id="skills">
+        <div class="flex-center-center flex-wrap text-center sm:text-left gap-4">
+
+            <div class="content flex-1 basis-[20rem] flex flex-col md:flex-row items-center md:items-start">
+                <div class="heading md:rotate-90 md:h-[fit-content] md:w-1/5 mt-12">
+                    <h1 class="uppercase opacity-70 text-center text-sm">my skills</h1>
+                </div>
+                <div class="info w-4/5">
+                    <h1 class="text-2xl capitalize font-bold">what my <br> programming <br>skills include
+                    </h1>
+                    <p class="text-sm my-3 opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Fuga
+                        enim
+                        aliquam
+                        blanditiis id explicabo natus at dolorum unde nihil earum. Omnis iste consectetur, quibusdam
+                        quaerat,
+                        labore laboriosam, totam rem numquam voluptatem quam dolorum! Ducimus sit sapiente quo
+                        voluptatibus
+                        quaerat dolorem, sequi dolor, enim assumenda culpa, dolorum voluptatem temporibus eaque minima.
+                    </p>
+
+                    <div
+                        class="tab-btns px-4 py-1 shadow-light rounded-full w-36 flex gap-2 bg-white dark:bg-lightColorDark cursor-pointer mx-auto">
+                        <div class="tab-btn rounded-full px-3 py-1 text-sm" id="skills">Skills</div>
+                        <div class="tab-btn rounded-full px-3 py-1 text-sm" id="tools">Tools</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills flex-1 basis-[16rem]">
+                <div class="skill-panels">
+                    <div class="skill-panel cursor-pointer flex-center-center gap-4 flex-wrap" data-id="skills">
+                        <img src="src/images/html5.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/css3.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/javascript.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/typescript.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/jquery.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/bootstrap.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/angular.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/react.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/vue.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/firebase.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/pugjs.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/sass.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                    </div>
+                    <div class="skill-panel cursor-pointer flex-center-center gap-4 flex-wrap" data-id="tools">
+                        <img src="src/images/ajax.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/gulp.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/webpack.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/git.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/npm.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/command.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/vs-code.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/trello.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/clickup.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/slack.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/photoshop.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                        <img src="src/images/adobe-xd.png" alt=""
+                            class="p-2 rounded-lg shadow-xl bg-white dark:bg-lightColorDark">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------- //Skills Section--------------------------------------------------------------- -->
+
+
+    <!-------------------------------------- Portifolio Section--------------------------------------------------------------- -->
+    <section class="portifolio pt-12" id="portifolio">
+        <div class="flex-center-center flex-wrap gap-4">
+
+
+            <div class="content flex-1 basis-[16rem]">
+                <div class="flex flex-col md:flex-row items-center md:items-start">
+                    <div class="heading md:rotate-90 md:h-[fit-content] md:w-1/5 mt-12">
+                        <h1 class="uppercase opacity-70 text-center text-sm">my works</h1>
+                    </div>
+                    <div class="w-4/5">
+                        <h1 class="text-2xl capitalize font-bold">see my<br> works whick will <br>amaze you
+                        </h1>
+                        <p class="my-2 text-muted text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Odio maxime nostrum at labore, nobis dicta esse facere ullam pariatur corrupti nemo quo
+                            non veritatis suscipit.</p>
+                    </div>
+                </div>
+                <img src="src/images/project-1.png" alt="" class="w-full rounded-lg mt-3">
+                <img src="src/images/project-2.png" alt="" class="w-full rounded-lg mt-3">
+            </div>
+
+
+            <div class="flex-1 basis-[16rem] ">
+                <img src="src/images/project-3.png" alt="" class="w-full rounded-lg mt-3">
+                <img src="src/images/project-4.png" alt="" class="w-full rounded-lg mt-3">
+                <img src="src/images/project-5.png" alt="" class="w-full rounded-lg mt-3">
+            </div>
+
+
+            <div class="flex-1 basis-[16rem]  text-center">
+                <img src="src/images/project-6.png" alt="" class="w-full rounded-lg mt-3">
+                <img src="src/images/project-7.png" alt="" class="w-full rounded-lg mt-3 mb-4">
+                <a href="#" class=" underline !text-primary">load more work</a>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------- //Portifolio Section--------------------------------------------------------------- -->
+
+
+    <!-------------------------------------- Contact Section--------------------------------------------------------------- -->
+    <section class="contact pb-4" id="contact">
+        <div class="flex flex-wrap  sm:text-left gap-4">
+
+            <div class="info flex-1 basis-[18rem]">
+                <div class="flex flex-col md:flex-row items-center md:items-start">
+                    <div class="heading md:rotate-90 md:h-[fit-content] md:w-1/5 mt-12">
+                        <h1 class="uppercase opacity-70 text-center text-sm">my works</h1>
+                    </div>
+                    <div class="w-4/5">
+                        <h1 class="text-2xl font-bold">haveyou any project? <br> please drop a message.</h1>
+                        <p class="my-2  text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quisquam perspiciatis magnam blanditiis iusto dolorem soluta?</p>
+                        <div class="flex mb-2 gap-3">
+                            <i class="feather-map-pin"></i>
+                            <div>
+                                <h1 class="text-sm">address:</h1>
+                                <p>Kampala, Luwumu Street Plot 122, Floor 5</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-2 gap-3">
+                            <i class="feather-phone"></i>
+                            <div>
+                                <h1 class="text-sm">phone:</h1>
+                                <p>(256) 775 358738 <br> (256) 752 870867</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-2 gap-3">
+                            <i class="feather-mail"></i>
+                            <div>
+                                <h1 class="text-sm">email:</h1>
+                                <p>wabwenib66@gmail.com <br> wabzbraize66@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="rounded-full shadow-lg w-8 h-8 grid place-items-center border-light"><i
+                                    class="feather-facebook"></i></a>
+                            <a href="#" class="rounded-full shadow-lg w-8 h-8 grid place-items-center border-light"><i
+                                    class="feather-twitter"></i></a>
+                            <a href="#" class="rounded-full shadow-lg w-8 h-8 grid place-items-center border-light"><i
+                                    class="feather-instagram"></i></a>
+                            <a href="#" class="rounded-full shadow-lg w-8 h-8 grid place-items-center border-light"><i
+                                    class="feather-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form flex-1 basis-[18rem]">
+                <form action=""
+                    class="rounded p-4 border-light shadow bg-lightColor dark:bg-lightColorDark placeholder-gray-300 dark:placeholder-gray-600 dark:border-none">
+                    <div class="input mb-2">
+                        <label for="name">Name</label>
+                        <input type="text" name="" id="name"
+                            class="form-control dark:bg-inputBgDark placeholder-gray-300 dark:placeholder-gray-600 dark:border-none"
+                            placeholder="eg. Wabweni Brian">
+                    </div>
+                    <div class="input mb-2">
+                        <label for="email">Email</label>
+                        <input type="text" name="" id="email"
+                            class="form-control dark:bg-inputBgDark placeholder-gray-300 dark:placeholder-gray-600 dark:border-none"
+                            placeholder="eg. wabwenib66@gmail.com">
+                    </div>
+                    <div class="input mb-2">
+                        <label for="phone">Phone</label>
+                        <input type="number" name="" id="phone"
+                            class="form-control dark:bg-inputBgDark placeholder-gray-300 dark:placeholder-gray-600 dark:border-none"
+                            placeholder="Phone number">
+                    </div>
+                    <div class="input">
+                        <label for="message">Message</label>
+                        <textarea name="" id="message"
+                            class="form-control dark:bg-inputBgDark placeholder-gray-300 dark:placeholder-gray-600 dark:border-none"
+                            placeholder="Write Message..."></textarea>
+                    </div>
+                    <button class="btn bg-primary hover:bg-orange-500 text-white w-full my-2 rounded-lg">send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------------- Contact Section--------------------------------------------------------------- -->
+
+
+    <!-------------------------Footer------------------------------------ -->
+    <footer class="pb-2">
+        <p class="text-center">Created By <span class="text-primary">Wabweni Brian</span> | All Rights
+            Reserved &copy;2022</p>
+    </footer>
+    <!-------------------------//Footer------------------------------------ -->
+
+
+    <!-- Scripts -->
+    <script src="src/js/main.js"></script>
+</body>
+</html>
